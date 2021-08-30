@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="photo"
+            type="com.malavet.sampleapp.data.ImagesDataType"/>
+        <import type="android.view.View" />
+        <variable
+            name="imageUrl"
+            type="String" />
+        <variable name="picasso" type="com.malavet.sampleapp.ui.adapters.BindingAdapter"/>
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/one_image"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/image_view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_extra_large"
+            android:layout_marginTop="@dimen/margin_thirty_two"
+            app:layout_constraintBottom_toTopOf="@id/image_author"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:urlImage="@{ photo.download_url }" />
+
+        <TextView
+            android:id="@+id/image_author"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_edge"
+            android:layout_marginEnd="@dimen/margin_edge"
+            android:layout_marginBottom="@dimen/margin_normal"
+            android:padding="@dimen/one_item_margin"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:textImage="@{ photo.author }"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

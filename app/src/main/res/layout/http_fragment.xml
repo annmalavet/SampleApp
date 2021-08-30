@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    tools:context="com.malavet.sampleapp.ui.fragments.HttpFragment">
+    <data>
+        <variable
+            name="listadapter"
+            type="com.malavet.sampleapp.ui.adapters.PhotoListAdapter" />
+        <variable
+            name="viewModel"
+            type="com.malavet.sampleapp.ui.MainViewModel" />
+        <import type="android.view.View" />
+        <variable
+            name="photo"
+            type="com.malavet.sampleapp.data.ImagesDataType"/>
+        <variable
+            name="imageUrl"
+            type="String" />
+        <variable name="picasso" type="com.malavet.sampleapp.ui.adapters.BindingAdapter"/>
+    </data>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/photo_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</layout>

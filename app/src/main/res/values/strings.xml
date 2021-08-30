@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Sample Application</string>
+    <string name="display_data_from_api">Display Data from API</string>
+    <string name="never_ending_carousel">Never Ending Carousel</string>
+</resources>
