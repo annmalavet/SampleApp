@@ -18,7 +18,6 @@ import com.malavet.sampleapp.ui.adapters.PhotoListAdapter
 class HttpFragment : Fragment() {
 
     private var viewModelAdapter: PhotoListAdapter? = null
-    private var _binding: HttpFragmentBinding? = null
 
     private val viewModel: MainViewModel by lazy {
         val activity = requireNotNull(this.activity) {
@@ -64,14 +63,12 @@ class HttpFragment : Fragment() {
 
         }
 
-        _binding = HttpFragmentBinding.inflate(inflater, container, false)
-
         return binding.root
     }
 
     override fun onDestroyView() {
         super.onDestroyView()
-        _binding = null
+
     }
 
 }

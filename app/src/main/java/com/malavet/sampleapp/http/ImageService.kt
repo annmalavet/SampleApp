@@ -1,4 +1,4 @@
-package com.malavet.stockapp.http
+package com.malavet.sampleapp.http
 
 import com.malavet.sampleapp.data.ImagesDataType
 import retrofit2.http.GET

@@ -1,6 +1,5 @@
 package com.malavet.sampleapp.http
 
-import com.malavet.stockapp.http.ImageService
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
