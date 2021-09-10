@@ -16,3 +16,5 @@ app/src/.DS_Store
 .gradle/6.5/javaCompile/taskHistory.bin
 .gradle/buildOutputCleanup/buildOutputCleanup.lock
 .idea/caches/build_file_checksums.ser
+*.bin
+*.lock
