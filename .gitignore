@@ -1,20 +1,20 @@
 
 .DS_Store
 .DS_Store
-.gradle/.DS_Store
-.gradle/.DS_Store
-.gradle/.DS_Store
-.gradle/.DS_Store
-.DS_Store
 app/src/.DS_Store
 *.lock
-.gradle/6.5/fileHashes/fileHashes.lock
-.gradle/6.5/fileHashes/resourceHashesCache.bin
-.gradle/6.5/javaCompile/classAnalysis.bin
-.gradle/6.5/javaCompile/jarAnalysis.bin
-.gradle/6.5/javaCompile/javaCompile.lock
-.gradle/6.5/javaCompile/taskHistory.bin
-.gradle/buildOutputCleanup/buildOutputCleanup.lock
-.idea/caches/build_file_checksums.ser
 *.bin
 *.lock
+*.bin
+*.lock
+
+
+# Android Studio
+*.iml
+.idea
+#.idea/workspace.xml - remove # and delete .idea if it better suit your needs.
+.gradle
+build/
+.navigation
+captures/
+output.json
